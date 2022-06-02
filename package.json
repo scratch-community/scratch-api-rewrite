@@ -1,0 +1,34 @@
+{
+  "name": "scratch-api",
+  "version": "0.0.1",
+  "description": "The scratch api by the community",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo there aren't any tests yet..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Weredime/scratch-api.git"
+  },
+  "keywords": [
+    "scratch"
+  ],
+  "author": {
+    "name": "Weredime",
+    "url": "https://github.com/Weredime"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Weredime/scratch-api/issues"
+  },
+  "homepage": "https://github.com/Weredime/scratch-api#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/restify": "^8.5.4",
+    "restify": "^8.6.1",
+    "rollup": "^2.75.4",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.2"
+  }
+}
