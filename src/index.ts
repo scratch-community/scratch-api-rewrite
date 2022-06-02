@@ -1,4 +1,4 @@
-import restify from "restify"
+const restify = require("restify");
 import constants from "./constants";
 
 const server = restify.createServer({
@@ -8,5 +8,7 @@ const server = restify.createServer({
 server.get("/", (req, res) => {
     res.json({ website: constants.WEBSITE, api: req.header("host"), help: constants.HELP });
 })
+
+
 
 server.listen(3000)

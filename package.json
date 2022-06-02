@@ -4,7 +4,8 @@
   "description": "The scratch api by the community",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo there aren't any tests yet..."
+    "test": "echo there aren't any tests yet...",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -13,10 +14,7 @@
   "keywords": [
     "scratch"
   ],
-  "author": {
-    "name": "Weredime",
-    "url": "https://github.com/Weredime"
-  },
+  "author": "Scratchers from the realm of the holy Advanced Topics",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/Weredime/scratch-api/issues"
