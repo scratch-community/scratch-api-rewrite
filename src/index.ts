@@ -1,7 +1,9 @@
-const restify = require("restify");
+import { createServer } from "restify";
 import constants from "./constants";
 
-const server = restify.createServer({
+import GetUserRoute from "./routes/users/[user]";
+
+const server = createServer({
     name: "scratch-api",
 });
 
@@ -9,6 +11,10 @@ server.get("/", (req, res) => {
     res.json({ website: constants.WEBSITE, api: req.header("host"), help: constants.HELP });
 })
 
+server.get("/users/:user", GetUserRoute);
 
 
-server.listen(3000)
+
+server.listen(3000, () => {
+    console.log("scratch-api: listening on port 3000");
+})

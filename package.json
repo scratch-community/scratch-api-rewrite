@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo there aren't any tests yet...",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "use": "rollup -c && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,13 @@
   },
   "homepage": "https://github.com/Weredime/scratch-api#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
+    "@supabase/supabase-js": "^1.35.3",
     "@types/restify": "^8.5.4",
+    "dotenv": "^16.0.1",
     "restify": "^8.6.1",
     "rollup": "^2.75.4",
     "tslib": "^2.4.0",
