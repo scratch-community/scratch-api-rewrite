@@ -6,7 +6,7 @@ export default async function (req: Request, res: Response) {
     const user = await client.from("users").select().eq("username", req.params.user);
 
     if (user.data.length === 0) {
-        return res.json(404, { code: "NotFound", "message": "User not found" });
+        return res.json(404, { code: "ResourceNotFound", "message": `${req.path} does not exist`});
     } else if (user.error) {
         return res.json(500, { code: "InternalServerError", "message": "Error fetching user" });
     }
